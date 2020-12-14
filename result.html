@@ -82,7 +82,7 @@
                     if (localStorage.key(i) !== 'choosed') {
                         let temp = JSON.parse(localStorage.getItem(localStorage.key(i)));
                         temp = temp.map(item => { return item.replace('<br/>', ' ') });
-                        temp.unshift(this.trans(localStorage.key(i).split('|')[0]));
+                        temp.unshift(this.trans(localStorage.key(i).split('|')[1]));
                         str_results.push(temp);
                     }
                 }
